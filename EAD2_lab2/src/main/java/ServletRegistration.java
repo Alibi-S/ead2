@@ -13,6 +13,10 @@ public class ServletRegistration extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         String confirmPassword = req.getParameter("confirmPassword");
+        if(!(confirmPassword.equals(password))){
+            req.getRequestDispatcher("Registration.jsp").forward(req, resp);
+        }
+
         req.setAttribute("username", username);
         req.setAttribute("password", password);
         req.setAttribute("confirmPassword", password);

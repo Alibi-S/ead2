@@ -15,7 +15,12 @@ public class ServletLogin extends HttpServlet {
         req.setAttribute("username", username);
         req.setAttribute("password", password);
         resp.getWriter().write(req.getParameter("username"));
-        req.getRequestDispatcher("results.jsp").forward(req, resp);
+        //req.getRequestDispatcher("results.jsp").forward(req, resp);
+
+        String path = "/results.jsp";
+        javax.servlet.ServletContext servletContext = getServletContext();
+        javax.servlet.RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher(path);
+        requestDispatcher.forward(req, resp);
     }
 
     @Override

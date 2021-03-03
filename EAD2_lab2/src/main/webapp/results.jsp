@@ -14,6 +14,7 @@
     <a href="main">Main</a>
     <br>
     <%
+
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String confirmPassword = request.getParameter("confirmPassword");

@@ -4,7 +4,7 @@
 </head>
 <body>
 
-    <nav style="background-color: blueviolet">
+    <nav style="background-color: lightyellow;">
         <a href="login">Login</a>
         <a href="registration">Registration</a>
     </nav>
