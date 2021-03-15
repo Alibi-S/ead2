@@ -9,7 +9,6 @@
     <filter-name>MyFilter</filter-name>
     <filter-class>MyFilter</filter-class>
   </filter>
-
   <filter-mapping>
     <filter-name>MyFilter</filter-name>
     <url-pattern>/results</url-pattern>
