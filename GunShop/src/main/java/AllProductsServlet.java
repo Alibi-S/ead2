@@ -24,6 +24,7 @@ public class AllProductsServlet extends javax.servlet.http.HttpServlet{
         }
 
         pw.println("<html>");
+
         pw.println("<h1 style=\"color: blue;\">Products: </h1>");
         pw.println("<a href=\"/mypage\">Main page</a>");
 

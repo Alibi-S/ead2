@@ -10,6 +10,13 @@
 <html>
 <head>
     <title>Admin</title>
+
+    <style>
+        a {
+            border: 1px;
+            border-color: darkblue;
+        }
+    </style>
 </head>
 <body>
     <h1>Admin page</h1>
@@ -19,15 +26,19 @@
     <form action="/addNewProduct">
         <label>Product name</label>
         <input type="text" name="product_name">
+        <br>
 
         <label>Description</label>
         <input type="text" name="product_desc">
+        <br>
 
         <label>Quantity</label>
         <input type="text" name="product_quantity">
+        <br>
 
         <label>Price</label>
         <input type="text" name="product_price">
+        <br>
 
         <input type="submit">
     </form>
@@ -59,6 +70,7 @@
     </table>
 
     <br><br>
+    <a href="/products_info.jsp">Products info</a><br>
     <a href="/products">Products</a><br>
     <a href="/mainPage">Exit</a>
 
