@@ -67,7 +67,7 @@ public class BuyProductServlet extends javax.servlet.http.HttpServlet{
                 user.setBalance(afterTransactionBalance);
                 session.setAttribute("user", user);
 
-                getServletContext().getRequestDispatcher("/admin.jsp").forward(req, resp);
+                //getServletContext().getRequestDispatcher("/admin.jsp").forward(req, resp);
 
             }
             if (rows>0) {

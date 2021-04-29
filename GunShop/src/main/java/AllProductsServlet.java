@@ -90,7 +90,7 @@ public class AllProductsServlet extends javax.servlet.http.HttpServlet{
                 System.out.println("третий кетч");
                 e.printStackTrace();
             }
-        } catch (ClassNotFoundException e) {
+        } catch  (ClassNotFoundException e) {
             System.out.println("четверый кетч");
             e.printStackTrace();
         }
